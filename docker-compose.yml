@@ -6,6 +6,8 @@ services:
     - /app/cache
     volumes:
     - weblate-data:/app/data
+    ports:
+    - "8084:8080"
     env_file:
     - ./environment
     restart: always
